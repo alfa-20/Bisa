@@ -27,7 +27,6 @@ def getNum(x):
             return temp
 
 def formula(a, b):
-
     if a == 'Kilometer' :
         Hektometer = str (b * 10)
         Dekameter = str (b * 100)
@@ -35,7 +34,6 @@ def formula(a, b):
         Desimeter = str (b * 10000)
         Centimeter = str (b * 100000)
         Milimeter = str (b * 1000000)
-        
         return Hektometer, Dekameter, Meter, Desimeter, Centimeter, Milimeter
 
     elif a == 'Hektometer' :
@@ -44,8 +42,7 @@ def formula(a, b):
         Meter = str (b * 100)
         Desimeter = str (b * 1000)
         Centimeter = str (b * 10000)
-        Milimeter = str (b * 100000)
-        
+        Milimeter = str (b * 100000)   
         return Kilometer, Dekameter, Meter, Desimeter, Centimeter, Milimeter
 
     elif a == 'Dekameter' :
@@ -55,7 +52,6 @@ def formula(a, b):
         Desimeter = str (b * 100)
         Centimeter = str (b * 1000)
         Milimeter = str (b * 10000)
-
         return Kilometer, Hektometer, Meter, Desimeter, Centimeter, Milimeter
 
     elif a == 'Meter' :
@@ -65,7 +61,6 @@ def formula(a, b):
         Desimeter = str (b * 10)
         Centimeter = str (b * 100)
         Milimeter = str (b * 1000)
-
         return Kilometer, Hektometer, Dekameter, Desimeter, Centimeter, Milimeter
 
     elif a == 'Desimeter' :
@@ -75,7 +70,6 @@ def formula(a, b):
         Meter = str (b / 10)
         Centimeter = str (b * 10)
         Milimeter = str (b * 100)
-
         return Kilometer, Hektometer, Dekameter, Meter, Centimeter, Milimeter
 
     elif a == 'Centimeter' :
@@ -85,7 +79,6 @@ def formula(a, b):
         Meter = str (b / 100)
         Desimeter = str (b / 10)
         Milimeter = str (b * 10)
-
         return Kilometer, Hektometer, Dekameter, Meter, Desimeter, Milimeter
 
     elif a == 'Milimeter' :
@@ -95,14 +88,12 @@ def formula(a, b):
         Meter = str (b / 1000)
         Desimeter = str (b / 100)
         Centimeter = str (b / 10)
-
         return Kilometer, Hektometer, Dekameter, Meter, Desimeter, Centimeter
 
     else :
         return 0
     
 def main(ev):
-
     num = getNum(input.value)
     result = formula(select.value, num)
     output0.textContent = result[0]
@@ -113,7 +104,6 @@ def main(ev):
     output5.textContent = result[5]
 
 def keyEnter(ev):
-
     console.log(f"{ev.code}")
     traceKey = f"{ev.code}"
     if traceKey == 'Enter':
