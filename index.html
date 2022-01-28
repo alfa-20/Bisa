@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.10.4/brython.js" integrity="sha512-Dr8IR/2fk/pBmngFLduWN5Ys/t7lcPxGgLCulHdTdgDrDRnGb+ANMxGXq+DKVN87jom+N3BrzzI476Pf98RReA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.10.4/brython_stdlib.js" integrity="sha512-kMRN6F4Yq4sNLbPG2lH3EO9n776JHHZub+UWogDxVjh9uTnoVo3wtN/rnQD4C4/AZtqI2zQdvdouGAAxOGwNeA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Konversi Satuan Panjang</title>
+</head>
+<body onload="brython()">
+    <header>
+        <h1>Program Penghitung Konversi Satuan Panjang</h1>
+    </header>
+    Pilihan konversi : <br>
+    <select id="select">
+        <option value="Kilometer">Kilometer</option>
+        <option value="Hektometer">Hektometer</option>
+        <option value="Dekameter">Dekameter</option>
+        <option value="Meter">Meter</option>
+        <option value="Desimeter">Desimeter</option>
+        <option value="Centimeter">Centimeter</option>
+        <option value="Milimeter">Milimeter</option>
+    </select>
+    <br>
+    <label>
+        Masukan sebuah bilangan :
+        <input type="text" id="input">
+    </label>
+    <br>
+    <button id="btn">Hasil</button>
+    <div id="output0"></div>
+    <div id="output1"></div>
+    <div id="output2"></div>
+    <div id="output3"></div>
+    <div id="output4"></div>
+    <div id="output5"></div>
+    <script type="text/python" src="app.py"></script>
+</body>
+</html>
