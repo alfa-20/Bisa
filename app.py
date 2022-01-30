@@ -109,5 +109,5 @@ def keyEnter(ev):
     if traceKey == 'Enter':
         main(0)
 
-    button.bind('click', main)
+    btn.bind('click', main)
     input.bind("keypress", keyEnter)
